@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browsername" value="edge"/>
+  <test parallel="none" name="TestOnChrome(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="matrix_web.crossbrowser">
+        <methods>
+          <include name="test"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- matrix_web.crossbrowser -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
+  <test parallel="none" name="TestOnFirefox(failed)">
+    <parameter name="browsername" value="firefox"/>
+    <classes>
+      <class name="matrix_web.crossbrowser">
+        <methods>
+          <include name="test"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- matrix_web.crossbrowser -->
+    </classes>
+  </test> <!-- TestOnFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
